@@ -12,10 +12,9 @@ import { createApp } from 'vue';
  * registering components with the application instance so they are ready
  * to use in your application's views. An example is included for you.
  */
-
+import ExampleComponent from './components/ExampleComponent.vue';
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
 app.component('example-component', ExampleComponent);
 
 /**
@@ -37,3 +36,4 @@ app.component('example-component', ExampleComponent);
  */
 
 app.mount('#app');
+console.log('Hello, TypeScript with Laravel Mix!');

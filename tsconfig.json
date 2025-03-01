@@ -1,12 +1,26 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "strict": true,
-        "module": "es2015",
-        "moduleResolution": "node",
-        "experimentalDecorators": true
+      "target": "esnext",
+      "module": "esnext",
+      "strict": true,
+      "jsx": "preserve",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": false, 
+      "allowJs": true,
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["resources/js/*"],
+        "*.vue": ["*.vue"]
+      },
+      "types": ["vue"]
     },
     "include": [
-        "resources/assets/js/**/*"
-    ]
-}
+      "resources/js/**/*",
+      "resources/js/**/*.ts",
+      "resources/js/**/*.vue"
+    ],
+    "exclude": ["node_modules"]
+  }
